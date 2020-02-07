@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/MovieListingPage should match snapshot 1`] = `
+.c0 {
+  width: 100%;
+  height: 100%;
+  background: #E5E5E5;
+}
+
+<div
+  className="c0"
+/>
+`;
