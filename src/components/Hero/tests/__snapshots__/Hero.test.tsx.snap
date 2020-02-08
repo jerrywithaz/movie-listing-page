@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Hero should match snapshot 1`] = `
+.c0 {
+  background: linear-gradient( 159.41deg, #FF009D 3.42%, #F5B324 96.5% );
+  height: 61.11111111111111%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: stretch;
+  -webkit-justify-content: stretch;
+  -ms-flex-pack: stretch;
+  justify-content: stretch;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0:before {
+  background: #E5E5E5;
+  bottom: -25%;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  -webkit-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+  transform: skewY(-3deg);
+  -webkit-transform-origin: 100%;
+  -ms-transform-origin: 100%;
+  transform-origin: 100%;
+  z-index: -1;
+}
+
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  width: 260px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.c3 {
+  width: 552px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <img
+      alt="Welcome to"
+      className="c2"
+      src="hero-arrow.svg"
+    />
+    <img
+      alt="Alamo Drafthouse Cinema"
+      className="c3"
+      src="hero-logo.svg"
+    />
+  </div>
+</div>
+`;
