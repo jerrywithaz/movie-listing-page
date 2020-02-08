@@ -3,10 +3,9 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import createSagaMiddleware from 'redux-saga';
 import appSagas from 'core/sagas';
 import reducer, { initialState } from 'core/reducer';
+import { AppState, AppStore } from './types';
 
-export default function configureStore() {
-
-  let composeEnhancers = composeWithDevTools;
+export default function configureStore(state?: AppState): AppStore {
 
   const sagaMiddleware = createSagaMiddleware({});
 
@@ -16,8 +15,8 @@ export default function configureStore() {
 
   const store = createStore(
     reducer,
-    initialState,
-    composeEnhancers(...enhancers),
+    state || initialState,
+    composeWithDevTools(...enhancers),
   );
 
   sagaMiddleware.run(appSagas);

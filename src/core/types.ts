@@ -1,7 +1,13 @@
+import { Store } from 'redux';
+
 export enum ActionType {
+
     REQUEST_AUSTIN_FEED = "app/REQUEST_AUSTIN_FEED",
     REQUEST_AUSTIN_FEED_SUCCESS = "app/REQUEST_AUSTIN_FEED_SUCCESS",
     REQUEST_AUSTIN_FEED_FAILURE = "app/REQUEST_AUSTIN_FEED_FAILURE",
+
+    SET_SELECTED_CINEMA = "app/SET_SELECTED_CINEMA"
+
 };
 
 export interface Cinema {
@@ -67,13 +73,32 @@ export type RequestAustinFeedFailureAction = {
     error: Error
 };
 
+export type SetSelectedCinemaAction = {
+    type: ActionType.SET_SELECTED_CINEMA,
+    payload: {
+        cinema: Cinema
+    }
+};
+
 export type Actions = (
     RequestAustinFeedAction |
     RequestAustinFeedSuccessAction |
-    RequestAustinFeedFailureAction
+    RequestAustinFeedFailureAction |
+    SetSelectedCinemaAction
 );
 
+export type SelectedCinema = Cinema | null;
+
+export type AppData = {
+    market: MarketData | null,
+    selectedCinema: SelectedCinema
+};
+
 export type AppState = {
-    data: MarketData | null,
+    data: AppData,
     error: Error | null
+};
+
+export type AppStore = Store<AppState, Actions> & {
+    dispatch: unknown
 };

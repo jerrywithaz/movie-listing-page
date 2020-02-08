@@ -1,5 +1,5 @@
 import reducer, { initialState } from './../reducer';
-import { requestAustinFeedFailure, requestAustinFeedSuccess } from './../actions';
+import { requestAustinFeedFailure, requestAustinFeedSuccess, setSelectedCinema } from './../actions';
 import { MarketData } from 'core/types';
 
 describe("core/reducer", () => {
@@ -10,7 +10,7 @@ describe("core/reducer", () => {
         const action = requestAustinFeedFailure(error);
 
         expect(reducer(initialState, action)).toEqual({
-            data: null,
+            data: initialState.data,
             error: error
         });
 
@@ -22,7 +22,30 @@ describe("core/reducer", () => {
         const action = requestAustinFeedSuccess(payload);
 
         expect(reducer(initialState, action)).toEqual({
-            data: payload,
+            data: {
+                market: payload,
+                selectedCinema: null
+            },
+            error: null
+        });
+
+    });
+
+    it("should handle SET_SELECTED_CINEMA", () => {
+        
+        const cinema = {
+            "id": "0003",
+            "slug": "village",
+            "name": "Village",
+            "status": "OPEN"
+        };
+        const action = setSelectedCinema(cinema);
+
+        expect(reducer(initialState, action)).toEqual({
+            data: {
+                market: null,
+                selectedCinema: cinema
+            },
             error: null
         });
 
