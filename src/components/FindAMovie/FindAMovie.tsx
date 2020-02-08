@@ -12,7 +12,7 @@ const FindAMovie = (props: FindAMovieProps) => {
     return (
         <Box {...rest} width={width} height={height}>
             <SelectTheaterList 
-                onTheaterSelected={(theater) => setSelectedTheater(theater)} 
+                onTheaterSelected={setSelectedTheater} 
                 theaters={theaters} 
                 selectedTheater={selectedTheater}/>
         </Box>
