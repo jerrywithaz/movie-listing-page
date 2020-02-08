@@ -13,6 +13,6 @@ export const Box = styled(({
     width: ${props => props.width};
     box-shadow: ${props => props.theme.boxShadow.small};
     border-radius: ${props => props.theme.borderRadius.default}px;
-    padding: ${props => props.theme.spacing.medium}px;
+    padding: ${props => props.theme.spacing.large}px;
     background: ${props => props.theme.palette.common.white};
 `;

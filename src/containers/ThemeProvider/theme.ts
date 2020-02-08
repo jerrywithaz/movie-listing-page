@@ -1,3 +1,6 @@
+import media from './media';
+import { Media } from './types';
+
 const theme = {
     borderRadius: {
         default: 4
@@ -15,6 +18,7 @@ const theme = {
         medium: "1px",
         large: "1.5px"
     },
+    media: media as Media,
     palette: {
         common: {
             black: "#000000",

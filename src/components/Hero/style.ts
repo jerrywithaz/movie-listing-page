@@ -17,7 +17,7 @@ export const Hero = styled.div`
     flex-direction: column;
     &:before {
         background: ${props => props.theme.palette.gray.primary};
-        bottom: -25%;
+        bottom: -35%;
         content: '';
         display: block;
         height: 50%;
@@ -46,4 +46,7 @@ export const Logo = styled.img`
     height: auto;
     display: block;
     margin: 0 auto;
+    ${props => props.theme.media.md`
+        max-width: calc(100% - ${props => props.theme.spacing.medium * 2}px);
+    `}
 `;

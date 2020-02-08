@@ -31,4 +31,4 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `yarn storybook`
 
-Launches the Storybook Application for developing UI Components.
+This project also contains Storybook which I use for building the presentational components seperate from the functional containers.
