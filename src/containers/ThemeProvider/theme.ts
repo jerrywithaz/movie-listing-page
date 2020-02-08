@@ -24,15 +24,9 @@ const theme = {
             primary: "#E5E5E5",
             secondary: "#6B6B6B"
         },
-        primary: {
-            light: "#F0B323"
-        },
-        secondary: {
-            light: "#FF009D"
-        },
-        tertiary: {
-            light: "#F5B324"
-        },
+        primary: "#F0B323",
+        secondary: "#FF009D",
+        tertiary: "#F5B324"
     },
     spacing: {
         xsmall: 8,
