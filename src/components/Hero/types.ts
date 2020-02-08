@@ -1,1 +1,1 @@
-export {};
+export type HeroProps = React.HTMLAttributes<HTMLDivElement>;
