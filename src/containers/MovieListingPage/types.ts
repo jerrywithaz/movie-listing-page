@@ -1,8 +1,9 @@
-import { Cinema, SelectedCinema } from "core/types";
+import { Cinema, SelectedCinema, Session, Film } from "core/types";
 
 export type MovieListingPageMappedProps = {
     selectedTheater: SelectedCinema,
-    theaters: Cinema[]
+    theaters: Cinema[],
+    films: Film[]
 };
 
 export type MovieListingPageMappedDispatch = {

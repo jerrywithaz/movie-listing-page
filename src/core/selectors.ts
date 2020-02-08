@@ -1,5 +1,6 @@
 import { createSelector } from 'reselect';
 import { AppState } from './types';
+import mapSessionsToFilms from 'utils/mapSessionsToFilms';
 
 const selectState = (state: AppState) => state;
 
@@ -47,7 +48,9 @@ const makeSelectFilms = () => {
     return createSelector(
         makeSelectMarket(),
         makeSelectSelectedCinema(),
-        (market, selectedCinema) => null
+        (market, selectedCinema) => market && selectedCinema ? 
+            mapSessionsToFilms(market, selectedCinema) : 
+            []
     );
 };
 
