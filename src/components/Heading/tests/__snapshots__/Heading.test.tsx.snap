@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Heading Heading 1 should match snapshot 1`] = `
+.c0 {
+  font-size: 26px;
+  line-height: 30px;
+  -webkit-letter-spacing: 1.5px;
+  -moz-letter-spacing: 1.5px;
+  -ms-letter-spacing: 1.5px;
+  letter-spacing: 1.5px;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0px 0px 24px 0px;
+}
+
+<h1
+  className="c0"
+>
+  Heading 1
+</h1>
+`;
+
+exports[`components/Heading Heading 2 should match snapshot 1`] = `
+.c0 {
+  font-size: 16px;
+  line-height: 20px;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  color: #6B6B6B;
+  text-transform: uppercase;
+  margin: 24px 0px;
+}
+
+<h2
+  className="c0"
+>
+  Heading 2
+</h2>
+`;
