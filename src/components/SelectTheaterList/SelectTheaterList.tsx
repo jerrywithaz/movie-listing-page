@@ -12,19 +12,18 @@ const SelectTheaterList = ({
     ...rest
 }: SelectTheaterListProps) => {
 
-    const theatersSorted = sortBy(theaters, "name");
-
     return (
         <Styled.SelectTheaterList {...rest}>
             <Styled.Heading2>Select Theater</Styled.Heading2>
             <Styled.Theaters>
-                {theatersSorted.map((theater: Cinema) => {
+                {sortBy(theaters, "name").map((theater: Cinema) => {
                     return (
                         <Styled.Theater 
-                            key={theater.id}
+                            key={theater.slug}
                             id={theater.slug} 
                             title={theater.name}
                             onClick={() => onTheaterSelected(theater)}
+                            onKeyUp={e => e.keyCode === 9 && onTheaterSelected(theater)}
                             selected={selectedTheater?.id === theater.id}>
                                 {theater.name}
                         </Styled.Theater>

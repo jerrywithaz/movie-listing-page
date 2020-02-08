@@ -28,6 +28,9 @@ export const Hero = styled.div`
         transform-origin: 100%;
         z-index: -1;
     }
+    ${props => props.theme.media.xs`
+        height: 460px
+    `}
 `;
 
 export const HeroInner = styled.div`

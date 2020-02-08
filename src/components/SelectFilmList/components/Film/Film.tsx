@@ -6,7 +6,7 @@ import { FilmProps } from './types';
 
 import * as Styled from './style';
 
-const Film = ({ slug, onClick }: FilmProps) => {
+const Film = ({ slug }: FilmProps) => {
 
     const [ hovered, setHovered ] = useState<boolean>(false);
 
@@ -17,10 +17,10 @@ const Film = ({ slug, onClick }: FilmProps) => {
     return (
         <Styled.Film 
             id={slug}
-            onClick={() => onClick(slug)} 
+            href={`https://drafthouse.com/show/${slug}`}
+            target="_blank"
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
-            role="button"
             title={title}>
                 <Styled.Title>
                     {title}

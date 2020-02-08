@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import sortBy from 'lodash/sortBy';
 import { Film } from 'core/types';
 import { SelectFilmListProps } from './types';
 import FilmComponent from './components/Film';
@@ -11,11 +12,15 @@ const SelectFilmList = ({
     ...rest
 }: SelectFilmListProps) => {
 
-    if (selectedTheater === null) return null;
+    const filmsRef = useRef<HTMLDivElement | null>(null);
 
-    function onFilmClick(slug: string) {
-        window.open(`https://drafthouse.com/show/${slug}`);
-    }
+    useEffect(() => {
+        if (filmsRef.current) {
+            filmsRef.current.scrollTop = 0;
+        }
+    }, [filmsRef, films]);
+
+    if (selectedTheater === null) return null;
 
     return (
         <Styled.SelectFilmList {...rest}>
@@ -23,13 +28,10 @@ const SelectFilmList = ({
                 <span>Films Playing at </span>
                 <Styled.TheaterName>{selectedTheater.name}</Styled.TheaterName>
             </Styled.Heading2>
-            <Styled.Films>
-                {films.map((film: Film)=> {
+            <Styled.Films ref={filmsRef}>
+                {sortBy(films, "slug").map((film: Film)=> {
                     return (
-                        <FilmComponent
-                            {...film}
-                            key={film.slug} 
-                            onClick={onFilmClick}/>
+                        <FilmComponent {...film} key={film.slug}/>
                     );
                 })}
             </Styled.Films>

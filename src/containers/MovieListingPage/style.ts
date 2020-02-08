@@ -5,7 +5,6 @@ import DefaultFindAMovie from 'components/FindAMovie';
 export const MovieListingPage = styled.div`
     width: 100%;
     height: 100%;
-    background: ${props => props.theme.palette.gray.primary};
     display: flex;
     flex-direction: column;
     position: relative;

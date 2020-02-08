@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Film = styled.div`
+export const Film = styled.a`
     ${props => `
         background: ${props.theme.palette.common.white};
         color: ${props.theme.palette.common.black};
@@ -12,10 +12,11 @@ export const Film = styled.div`
         height: 48px;
         margin-bottom: ${props.theme.spacing.small}px;
         padding: 0px ${props.theme.spacing.medium}px;
+        text-decoration: none;
         &:focus {
             outline: none;
         }
-        &:hover {
+        &:hover, &:focus {
             background: ${props.theme.palette.common.black};
             color: ${props.theme.palette.primary};
             cursor: pointer;

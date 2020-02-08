@@ -17,40 +17,24 @@ export interface Cinema {
     status: string
 };
 
-export interface MarketString {
-    key: string,
-    value: string
-};
-
 export interface Market {
     id: string,
     slug: string,
     name: string,
     status: string,
-    isOpenAccessSeasonPassMarket: boolean,
-    cinemas: Cinema[],
-    marketStrings: MarketString[],
+    cinemas: Cinema[]
 };
 
 export interface Session {
     cinemaId: string,
     sessionId: string,
-    filmHeadOfficeCode: string,
     filmSlug: string,
-    filmName: string,
-    screenNumber: string,
-    recognitionIds: string[]
+    filmName: string
 };
 
 export interface Film {
-    headOfficeCode: string,
     slug: string,
-    title: string,
-    headline: string,
-    landscapeHeroImage: string,
-    portraitHeroImage: string,
-    isRepertory: boolean,
-    rating: string
+    title: string
 };
 
 export type MarketData = {

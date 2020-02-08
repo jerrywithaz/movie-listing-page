@@ -14,5 +14,6 @@ export default createGlobalStyle`
   body {
     margin: 0px;
     font-family: ${props => props.theme.typography.fontFamily.primary};
+    background: ${props => props.theme.palette.gray.primary};
   }
 `

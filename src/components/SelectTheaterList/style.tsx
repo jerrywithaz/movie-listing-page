@@ -8,6 +8,7 @@ export const SelectTheaterList = styled.div`
     flex-direction: column;
     max-height: 196px;
     margin-bottom: ${props => props.theme.spacing.large}px;
+    overflow: hidden;
 `;
 
 export const Heading2 = styled(DefaultHeading2)`
@@ -21,6 +22,8 @@ export const Theaters = styled.div`
     flex-wrap: wrap;
     flex-flow: row wrap;
     justify-content: flex-start;
+    flex: 1;
+    overflow: auto;
 `;
 
 export const Theater = styled(({
@@ -50,7 +53,7 @@ export const Theater = styled(({
         &:focus {
             outline: none;
         }
-        &:hover {
+        &:hover, &:focus {
             cursor: pointer;
             background: ${props.theme.palette.primary};
             border: 1px solid ${props.theme.palette.primary};
@@ -70,7 +73,11 @@ export const Theater = styled(({
         }
     `}
     ${props => props.theme.media.xs`
-        width: calc(50% - 16px);
+        width: 100%;
+        margin: 0px 0px ${props.theme.spacing.small}px 0px;
+        &:nth-child(3n - 1) {
+            margin: 0px 0px ${props.theme.spacing.small}px 0px;
+        }
     `}
     
 `;
