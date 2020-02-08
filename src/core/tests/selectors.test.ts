@@ -1,4 +1,5 @@
-import { makeSelectState, selectState } from './../selectors';
+import { MarketData } from './../types';
+import { makeSelectState, selectState, makeSelectCinemas } from './../selectors';
 
 describe("core/selectors", () => {
 
@@ -27,6 +28,32 @@ describe("core/selectors", () => {
             };
         
             expect(makeSelectState()(mockedState)).toEqual(mockedState);
+
+        });
+
+    });
+
+    describe("makeSelectCinemas", () => {
+
+        it("should return the cinemas", () => {
+
+            const cinemas = [{
+                "id": "0003",
+                "slug": "village",
+                "name": "Village",
+                "status": "OPEN"
+            }];
+            
+            const mockedState = {
+                data: {
+                    market: {
+                        cinemas: cinemas
+                    }
+                } as MarketData,
+                error: null
+            };
+        
+            expect(makeSelectCinemas()(mockedState)).toEqual(cinemas);
 
         });
 
