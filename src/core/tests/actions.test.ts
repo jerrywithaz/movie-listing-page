@@ -2,7 +2,8 @@ import { ActionType, MarketData } from './../types';
 import { 
     requestAustinFeed, 
     requestAustinFeedFailure, 
-    requestAustinFeedSuccess 
+    requestAustinFeedSuccess ,
+    setSelectedCinema
 } from './../actions';
 
 describe("core/actions", () => {
@@ -47,6 +48,27 @@ describe("core/actions", () => {
             expect(action).toEqual({
                 type: ActionType.REQUEST_AUSTIN_FEED_SUCCESS,
                 payload: payload
+            });
+
+        });
+
+    });
+
+    describe("setSelectedCinema", () => {
+
+        it("should return correct action", () => {
+
+            const cinema = {
+                "id": "0003",
+                "slug": "village",
+                "name": "Village",
+                "status": "OPEN"
+            };
+            const action = setSelectedCinema(cinema);
+
+            expect(action).toEqual({
+                type: ActionType.SET_SELECTED_CINEMA,
+                payload: {cinema}
             });
 
         });

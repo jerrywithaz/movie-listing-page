@@ -3,7 +3,9 @@ import {
     RequestAustinFeedAction, 
     RequestAustinFeedSuccessAction, 
     RequestAustinFeedFailureAction, 
-    MarketData
+    MarketData,
+    SetSelectedCinemaAction,
+    Cinema
 } from './types';
 
 export function requestAustinFeed(): RequestAustinFeedAction {
@@ -27,5 +29,14 @@ export function requestAustinFeedFailure(
     return {
         type: ActionType.REQUEST_AUSTIN_FEED_FAILURE,
         error: error
+    };
+}
+
+export function setSelectedCinema(
+    cinema: Cinema
+): SetSelectedCinemaAction{
+    return {
+        type: ActionType.SET_SELECTED_CINEMA,
+        payload: { cinema }
     };
 }

@@ -8,7 +8,10 @@ describe("core/selectors", () => {
         it("should return the state", () => {
 
             const mockedState = {
-                data: null,
+                data: {
+                    market: null,
+                    selectedCinema: null
+                },
                 error: null
             };
         
@@ -23,7 +26,10 @@ describe("core/selectors", () => {
         it("should return the state", () => {
 
             const mockedState = {
-                data: null,
+                data: {
+                    market: {} as MarketData,
+                    selectedCinema: null
+                },
                 error: null
             };
         
@@ -47,9 +53,12 @@ describe("core/selectors", () => {
             const mockedState = {
                 data: {
                     market: {
-                        cinemas: cinemas
-                    }
-                } as MarketData,
+                        market: {
+                            cinemas: cinemas
+                        }
+                    } as MarketData,
+                    selectedCinema: null
+                },
                 error: null
             };
         
