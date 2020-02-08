@@ -1,5 +1,6 @@
 import reducer, { initialState } from './../reducer';
 import { requestAustinFeedFailure, requestAustinFeedSuccess } from './../actions';
+import { MarketData } from 'core/types';
 
 describe("core/reducer", () => {
 
@@ -17,11 +18,11 @@ describe("core/reducer", () => {
 
     it("should handle REQUEST_AUSTIN_FEED_SUCCESS", () => {
         
-        const payload = {};
+        const payload = {} as MarketData;
         const action = requestAustinFeedSuccess(payload);
 
         expect(reducer(initialState, action)).toEqual({
-            data: {},
+            data: payload,
             error: null
         });
 

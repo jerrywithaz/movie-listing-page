@@ -2,7 +2,8 @@ import {
     ActionType, 
     RequestAustinFeedAction, 
     RequestAustinFeedSuccessAction, 
-    RequestAustinFeedFailureAction 
+    RequestAustinFeedFailureAction, 
+    MarketData
 } from './types';
 
 export function requestAustinFeed(): RequestAustinFeedAction {
@@ -12,7 +13,7 @@ export function requestAustinFeed(): RequestAustinFeedAction {
 }
 
 export function requestAustinFeedSuccess(
-    payload: object
+    payload: MarketData
 ): RequestAustinFeedSuccessAction {
     return {
         type: ActionType.REQUEST_AUSTIN_FEED_SUCCESS,

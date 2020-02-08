@@ -7,9 +7,9 @@ export function* requestAustinFeedAsync() {
     try {
 
         const response = yield call(fetch, 'https://drafthouse.com/s/mother/v1/page/market/main/austin');
-        const json = response.json();
+        const json = yield response.json();
 
-        yield put(requestAustinFeedSuccess(json));
+        yield put(requestAustinFeedSuccess(json.data));
 
     } catch (e) {
 

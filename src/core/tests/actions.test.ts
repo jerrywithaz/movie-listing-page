@@ -1,4 +1,4 @@
-import { ActionType } from './../types';
+import { ActionType, MarketData } from './../types';
 import { 
     requestAustinFeed, 
     requestAustinFeedFailure, 
@@ -41,13 +41,14 @@ describe("core/actions", () => {
 
         it("should return correct action", () => {
 
-            const action = requestAustinFeedSuccess({});
+            const payload = {} as MarketData;
+            const action = requestAustinFeedSuccess(payload);
 
             expect(action).toEqual({
                 type: ActionType.REQUEST_AUSTIN_FEED_SUCCESS,
-                payload: {}
+                payload: payload
             });
-            
+
         });
 
     });

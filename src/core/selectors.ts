@@ -10,9 +10,17 @@ const makeSelectState = () => {
       );
 }
 
+const makeSelectCinemas = () => {
+    return createSelector(
+        selectState,
+        appState => appState.data?.market.cinemas
+      );
+};
+
 export {
     selectState,
-    makeSelectState
+    makeSelectState,
+    makeSelectCinemas
 };
 
 
