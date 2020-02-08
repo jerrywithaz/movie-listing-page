@@ -6,6 +6,8 @@ import ThemeProvider from 'containers/ThemeProvider';
 import configureStore from 'core/store';
 import { requestAustinFeed } from 'core/actions';
 
+import 'assets/styles/fonts.css';
+
 const store = configureStore();
 
 function App() {

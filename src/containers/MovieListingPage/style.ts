@@ -7,13 +7,14 @@ export const MovieListingPage = styled.div`
     height: 100%;
     background: ${props => props.theme.palette.gray.primary};
     display: flex;
+    flex-direction: column;
     position: relative;
     align-items: center;
     justify-content: center;
 `;
 
 export const Hero = styled(DefaultHero)`
-    position: absolute;
+    position: relative;
     width: 100%;
     top: 0;
     left: 0;
@@ -23,4 +24,6 @@ export const Hero = styled(DefaultHero)`
 export const FindAMovie = styled(DefaultFindAMovie)`
     position: relative;
     z-index: 2;
+    margin-top: -150px;
+    margin-bottom: ${props => props.theme.spacing.large}px;
 `;

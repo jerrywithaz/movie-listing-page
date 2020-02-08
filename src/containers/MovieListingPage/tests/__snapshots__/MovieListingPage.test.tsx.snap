@@ -3,7 +3,7 @@
 exports[`containers/MovieListingPage should match snapshot 1`] = `
 .c1 {
   background: linear-gradient( 159.41deg, #FF009D 3.42%, #F5B324 96.5% );
-  height: 61.11111111111111%;
+  height: 560px;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -62,15 +62,27 @@ exports[`containers/MovieListingPage should match snapshot 1`] = `
 }
 
 .c6 {
-  height: 50.138888888888886%;
-  width: 52.22222222222223%;
+  height: 722px;
+  width: 752px;
   box-shadow: 0px 1px 5px rgba(24,17,3,0.2), 0px 3px 4px rgba(0,0,0,0.12), 0px 2px 4px rgba(24,17,3,0.14);
   border-radius: 4px;
   padding: 24px;
   background: #ffffff;
 }
 
-.c8 {
+.c9 {
+  font-size: 26px;
+  line-height: 30px;
+  -webkit-letter-spacing: 1.5px;
+  -moz-letter-spacing: 1.5px;
+  -ms-letter-spacing: 1.5px;
+  letter-spacing: 1.5px;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0px 0px 24px 0px;
+}
+
+.c11 {
   font-size: 16px;
   line-height: 20px;
   -webkit-letter-spacing: 0.5px;
@@ -82,13 +94,22 @@ exports[`containers/MovieListingPage should match snapshot 1`] = `
   margin: 24px 0px;
 }
 
-.c9 {
-  margin-left: 8px;
-  margin-right: 8px;
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-height: 196px;
+}
+
+.c12 {
   margin-bottom: 16px;
 }
 
-.c10 {
+.c13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -105,6 +126,21 @@ exports[`containers/MovieListingPage should match snapshot 1`] = `
   justify-content: flex-start;
 }
 
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 560px;
+  margin: 0 auto;
+  max-width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
 .c0 {
   width: 100%;
   height: 100%;
@@ -113,6 +149,9 @@ exports[`containers/MovieListingPage should match snapshot 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -125,7 +164,7 @@ exports[`containers/MovieListingPage should match snapshot 1`] = `
 }
 
 .c2 {
-  position: absolute;
+  position: relative;
   width: 100%;
   top: 0;
   left: 0;
@@ -135,6 +174,8 @@ exports[`containers/MovieListingPage should match snapshot 1`] = `
 .c7 {
   position: relative;
   z-index: 2;
+  margin-top: -150px;
+  margin-bottom: 32px;
 }
 
 <div
@@ -162,16 +203,25 @@ exports[`containers/MovieListingPage should match snapshot 1`] = `
     className="c6 c7"
   >
     <div
-      className=""
+      className="c8"
     >
-      <h2
-        className="c8 c9"
+      <h1
+        className="c9"
       >
-        Select Theater
-      </h2>
+        Find a Movie
+      </h1>
       <div
         className="c10"
-      />
+      >
+        <h2
+          className="c11 c12"
+        >
+          Select Theater
+        </h2>
+        <div
+          className="c13"
+        />
+      </div>
     </div>
   </div>
 </div>

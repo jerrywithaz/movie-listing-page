@@ -6,7 +6,7 @@ export const Hero = styled.div`
         ${props => props.theme.palette.secondary} 3.42%, 
         ${props => props.theme.palette.tertiary} 96.5%
     );
-    height: ${100 - ((560/1440) * 100)}%;
+    height: 560px;
     width: 100%;
     position: relative;
     overflow: hidden;

@@ -8,6 +8,7 @@ function mapSessionsToFilms(market: MarketData, cinema: Cinema): Film[] {
     // Get unique film slugs
     const filmSlugs = [...new Set(sessions.map(session => session.filmSlug))];
 
+    // Returns films that have their slug in the filmSlugs array
     return market.films.filter(film => filmSlugs.indexOf(film.slug) > -1);
 
 };

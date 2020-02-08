@@ -20,7 +20,8 @@ function MovieListingPage({
     return (
         <Styled.MovieListingPage {...rest}>
             <Styled.Hero/>
-            <Styled.FindAMovie 
+            <Styled.FindAMovie
+                films={films} 
                 theaters={theaters} 
                 selectedTheater={selectedTheater}
                 setSelectedTheater={setSelectedTheater}/>
