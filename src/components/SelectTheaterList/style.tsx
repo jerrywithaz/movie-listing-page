@@ -36,40 +36,38 @@ export const Theater = styled(({
         border: 1px solid ${props.selected ? `${props.theme.palette.primary}`: `${props.theme.palette.common.black}`};
         border-radius: ${props.theme.borderRadius.default}px;
         color: ${props.selected ? `${props.theme.palette.common.white}`: `${props.theme.palette.common.black}`};
-        height: 40px;
-        padding: 0px ${props.theme.spacing.small}px;
-        margin: ${props.theme.spacing.xsmall}px 0px;
-        width: 176px;
-        letter-spacing: ${props.theme.letterSpacing.small};
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 16px;
-        font-weight: bold;
-        white-space: nowrap;
-        min-width: 0px;
         display: flex;
         align-items: center;
         justify-content: center;
-        &:focus {
-            outline: none;
-        }
+        height: 40px;
+        padding: 0px ${props.theme.spacing.small}px;
+        margin: ${props.theme.spacing.xsmall}px 0px;
+        letter-spacing: ${props.theme.letterSpacing.small};
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        white-space: nowrap;
+        width: 176px;
         &:hover, &:focus {
             cursor: pointer;
             background: ${props.theme.palette.primary};
             border: 1px solid ${props.theme.palette.primary};
             color: ${props.theme.palette.common.white};
         }
+        &:focus {
+            outline: none;
+        }
         &:nth-child(3n - 1) {
             margin-left: ${props.theme.spacing.small}px;
             margin-right: ${props.theme.spacing.small}px;
         }
-        
     `}
     ${props => props.theme.media.sm`
-        margin-right: ${props.theme.spacing.small}px;
-        width: calc(33.33% - 16px);
+        width: calc(50% - ${props.theme.spacing.small}px);
+        margin: 0px ${props.theme.spacing.small}px ${props.theme.spacing.small}px 0px;
         &:nth-child(3n - 1) {
-            margin-left: 0px;
+            margin: 0px ${props.theme.spacing.small}px ${props.theme.spacing.small}px 0px;
         }
     `}
     ${props => props.theme.media.xs`

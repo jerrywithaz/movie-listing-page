@@ -25,36 +25,36 @@ exports[`components/Hero should match snapshot 1`] = `
   flex-direction: column;
 }
 
-.c0:before {
+.c1 {
+  position: absolute;
   background: #E5E5E5;
-  bottom: -35%;
+  bottom: -34%;
   content: '';
   display: block;
   height: 50%;
   left: 0;
-  position: absolute;
   right: 0;
-  -webkit-transform: skewY(-3deg);
-  -ms-transform: skewY(-3deg);
-  transform: skewY(-3deg);
   -webkit-transform-origin: 100%;
   -ms-transform-origin: 100%;
   transform-origin: 100%;
+  -webkit-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+  transform: skewY(-3deg);
   z-index: -1;
 }
 
-.c1 {
+.c2 {
   position: relative;
 }
 
-.c2 {
+.c3 {
   width: 260px;
   height: auto;
   display: block;
   margin: 0 auto;
 }
 
-.c3 {
+.c4 {
   width: 552px;
   height: auto;
   display: block;
@@ -68,7 +68,7 @@ exports[`components/Hero should match snapshot 1`] = `
 }
 
 @media (max-width:992px) {
-  .c3 {
+  .c4 {
     max-width: calc(100% - 48px);
   }
 }
@@ -78,15 +78,18 @@ exports[`components/Hero should match snapshot 1`] = `
 >
   <div
     className="c1"
+  />
+  <div
+    className="c2"
   >
     <img
       alt="Welcome to"
-      className="c2"
+      className="c3"
       src="hero-arrow.svg"
     />
     <img
       alt="Alamo Drafthouse Cinema"
-      className="c3"
+      className="c4"
       src="hero-logo.svg"
     />
   </div>

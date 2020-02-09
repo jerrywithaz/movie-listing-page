@@ -9,6 +9,7 @@ const Hero = (props: HeroProps) => {
 
     return (
         <Styled.Hero {...props}>
+            <Styled.HeroSlant/>
             <Styled.HeroInner>
                 <Styled.Arrow src={arrow} alt="Welcome to"/>
                 <Styled.Logo src={logo} alt="Alamo Drafthouse Cinema"/>

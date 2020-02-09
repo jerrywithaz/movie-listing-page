@@ -25,43 +25,43 @@ exports[`containers/MovieListingPage should match snapshot 1`] = `
   flex-direction: column;
 }
 
-.c1:before {
+.c3 {
+  position: absolute;
   background: #E5E5E5;
-  bottom: -35%;
+  bottom: -34%;
   content: '';
   display: block;
   height: 50%;
   left: 0;
-  position: absolute;
   right: 0;
-  -webkit-transform: skewY(-3deg);
-  -ms-transform: skewY(-3deg);
-  transform: skewY(-3deg);
   -webkit-transform-origin: 100%;
   -ms-transform-origin: 100%;
   transform-origin: 100%;
+  -webkit-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+  transform: skewY(-3deg);
   z-index: -1;
 }
 
-.c3 {
+.c4 {
   position: relative;
 }
 
-.c4 {
+.c5 {
   width: 260px;
   height: auto;
   display: block;
   margin: 0 auto;
 }
 
-.c5 {
+.c6 {
   width: 552px;
   height: auto;
   display: block;
   margin: 0 auto;
 }
 
-.c10 {
+.c11 {
   font-size: 26px;
   line-height: 30px;
   -webkit-letter-spacing: 1.5px;
@@ -73,7 +73,7 @@ exports[`containers/MovieListingPage should match snapshot 1`] = `
   margin: 0px 0px 24px 0px;
 }
 
-.c13 {
+.c14 {
   font-size: 16px;
   line-height: 20px;
   -webkit-letter-spacing: 0.5px;
@@ -85,7 +85,7 @@ exports[`containers/MovieListingPage should match snapshot 1`] = `
   margin: 24px 0px;
 }
 
-.c12 {
+.c13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -98,11 +98,11 @@ exports[`containers/MovieListingPage should match snapshot 1`] = `
   overflow: hidden;
 }
 
-.c14 {
+.c15 {
   margin-bottom: 16px;
 }
 
-.c15 {
+.c16 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -123,7 +123,7 @@ exports[`containers/MovieListingPage should match snapshot 1`] = `
   overflow: auto;
 }
 
-.c6 {
+.c7 {
   height: 722px;
   width: 752px;
   box-shadow: 0px 1px 5px rgba(24,17,3,0.2), 0px 3px 4px rgba(0,0,0,0.12), 0px 2px 4px rgba(24,17,3,0.14);
@@ -132,12 +132,12 @@ exports[`containers/MovieListingPage should match snapshot 1`] = `
   background: #ffffff;
 }
 
-.c11 {
+.c12 {
   display: block;
   text-align: center;
 }
 
-.c9 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -181,7 +181,7 @@ exports[`containers/MovieListingPage should match snapshot 1`] = `
   z-index: 1;
 }
 
-.c8 {
+.c9 {
   position: relative;
   z-index: 2;
   margin-top: -150px;
@@ -195,13 +195,13 @@ exports[`containers/MovieListingPage should match snapshot 1`] = `
 }
 
 @media (max-width:992px) {
-  .c5 {
+  .c6 {
     max-width: calc(100% - 48px);
   }
 }
 
 @media (max-width:992px) {
-  .c7 {
+  .c8 {
     max-width: calc(100% - 64px);
   }
 }
@@ -214,40 +214,43 @@ exports[`containers/MovieListingPage should match snapshot 1`] = `
   >
     <div
       className="c3"
+    />
+    <div
+      className="c4"
     >
       <img
         alt="Welcome to"
-        className="c4"
+        className="c5"
         src="hero-arrow.svg"
       />
       <img
         alt="Alamo Drafthouse Cinema"
-        className="c5"
+        className="c6"
         src="hero-logo.svg"
       />
     </div>
   </div>
   <div
-    className="c6 c7 c8"
+    className="c7 c8 c9"
   >
     <div
-      className="c9"
+      className="c10"
     >
       <h1
-        className="c10 c11"
+        className="c11 c12"
       >
         Find a Movie
       </h1>
       <div
-        className="c12"
+        className="c13"
       >
         <h2
-          className="c13 c14"
+          className="c14 c15"
         >
           Select Theater
         </h2>
         <div
-          className="c15"
+          className="c16"
         />
       </div>
     </div>

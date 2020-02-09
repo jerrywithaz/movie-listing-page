@@ -15,22 +15,23 @@ export const Hero = styled.div`
     align-items: center;
     justify-content: stretch;
     flex-direction: column;
-    &:before {
-        background: ${props => props.theme.palette.gray.primary};
-        bottom: -35%;
-        content: '';
-        display: block;
-        height: 50%;
-        left: 0;
-        position: absolute;
-        right: 0;
-        transform: skewY(-3deg);
-        transform-origin: 100%;
-        z-index: -1;
-    }
     ${props => props.theme.media.xs`
         height: 460px
     `}
+`;
+
+export const HeroSlant = styled.div`
+    position: absolute;
+    background: ${props => props.theme.palette.gray.primary};
+    bottom: -34%;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    right: 0;
+    transform-origin: 100%;
+    transform: skewY(-3deg);
+    z-index: -1;
 `;
 
 export const HeroInner = styled.div`
