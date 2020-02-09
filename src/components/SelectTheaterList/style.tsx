@@ -34,9 +34,9 @@ export const Theater = styled(({
 )`
     ${props => `
         background: ${props.selected ? `${props.theme.palette.primary}`: `${props.theme.palette.common.white}`};
-        border: 1px solid ${props.selected ? `${props.theme.palette.primary}`: `${props.theme.palette.common.black}`};
+        border: 1px solid ${props.selected ? `${props.theme.palette.primary}`: `${props.theme.palette.black.secondary}`};
         border-radius: ${props.theme.borderRadius.default}px;
-        color: ${props.selected ? `${props.theme.palette.common.white}`: `${props.theme.palette.common.black}`};
+        color: ${props.theme.palette.black.secondary};
         display: flex;
         align-items: center;
         justify-content: center;
@@ -53,7 +53,7 @@ export const Theater = styled(({
             cursor: pointer;
             background: ${props.theme.palette.primary};
             border: 1px solid ${props.theme.palette.primary};
-            color: ${props.theme.palette.common.white};
+            color: ${props.theme.palette.black.secondary};
         }
         &:focus {
             outline: none;

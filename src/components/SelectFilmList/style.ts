@@ -15,7 +15,7 @@ export const Heading2 = styled(DefaultHeading2)`
 `;
 
 export const TheaterName = styled.span`
-    color: ${props => props.theme.palette.common.black};
+    color: ${props => props.theme.palette.black.secondary};
 `;
 
 export const Films = styled.div`

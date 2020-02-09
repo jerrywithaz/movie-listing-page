@@ -53,9 +53,9 @@ exports[`components/SelectTheaterList renders with theaters 1`] = `
 
 .c4 {
   background: #ffffff;
-  border: 1px solid #000000;
+  border: 1px solid #090909;
   border-radius: 4px;
-  color: #000000;
+  color: #090909;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -87,7 +87,7 @@ exports[`components/SelectTheaterList renders with theaters 1`] = `
   cursor: pointer;
   background: #F0B323;
   border: 1px solid #F0B323;
-  color: #ffffff;
+  color: #090909;
 }
 
 .c4:focus {
@@ -103,7 +103,7 @@ exports[`components/SelectTheaterList renders with theaters 1`] = `
   background: #F0B323;
   border: 1px solid #F0B323;
   border-radius: 4px;
-  color: #ffffff;
+  color: #090909;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -135,7 +135,7 @@ exports[`components/SelectTheaterList renders with theaters 1`] = `
   cursor: pointer;
   background: #F0B323;
   border: 1px solid #F0B323;
-  color: #ffffff;
+  color: #090909;
 }
 
 .c5:focus {
@@ -192,10 +192,12 @@ exports[`components/SelectTheaterList renders with theaters 1`] = `
 }
 
 <section
+  aria-labelledby="heading-select-theater"
   className="c0"
 >
   <h2
     className="c1 c2"
+    id="heading-select-theater"
   >
     Select Theater
   </h2>
@@ -294,10 +296,12 @@ exports[`components/SelectTheaterList renders without theaters 1`] = `
 }
 
 <section
+  aria-labelledby="heading-select-theater"
   className="c0"
 >
   <h2
     className="c1 c2"
+    id="heading-select-theater"
   >
     Select Theater
   </h2>

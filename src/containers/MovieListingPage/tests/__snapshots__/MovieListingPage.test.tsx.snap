@@ -231,6 +231,7 @@ exports[`containers/MovieListingPage should match snapshot 1`] = `
     </div>
   </header>
   <main
+    aria-live="polite"
     className="c7 c8 c9"
     role="main"
   >
@@ -243,10 +244,12 @@ exports[`containers/MovieListingPage should match snapshot 1`] = `
         Find a Movie
       </h1>
       <section
+        aria-labelledby="heading-select-theater"
         className="c13"
       >
         <h2
           className="c14 c15"
+          id="heading-select-theater"
         >
           Select Theater
         </h2>

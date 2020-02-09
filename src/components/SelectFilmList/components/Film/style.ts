@@ -3,8 +3,8 @@ import styled from 'styled-components';
 export const Film = styled.a`
     ${props => `
         background: ${props.theme.palette.common.white};
-        color: ${props.theme.palette.common.black};
-        border: 1px solid ${props.theme.palette.common.black}};
+        color: ${props.theme.palette.black.secondary};
+        border: 1px solid ${props.theme.palette.black.secondary}};
         border-radius: ${props.theme.borderRadius.default}px;
         display: flex;
         align-items: center;
@@ -17,7 +17,7 @@ export const Film = styled.a`
             outline: none;
         }
         &:hover, &:focus {
-            background: ${props.theme.palette.common.black};
+            background: ${props.theme.palette.black.secondary};
             color: ${props.theme.palette.primary};
             cursor: pointer;
         }

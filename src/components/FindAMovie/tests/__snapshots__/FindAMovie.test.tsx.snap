@@ -99,6 +99,7 @@ exports[`components/FindAMovie should match snapshot 1`] = `
 }
 
 <main
+  aria-live="polite"
   className="c0 c1"
   role="main"
 >
@@ -111,10 +112,12 @@ exports[`components/FindAMovie should match snapshot 1`] = `
       Find a Movie
     </h1>
     <section
+      aria-labelledby="heading-select-theater"
       className="c5"
     >
       <h2
         className="c6 c7"
+        id="heading-select-theater"
       >
         Select Theater
       </h2>

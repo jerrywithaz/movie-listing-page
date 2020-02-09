@@ -20,6 +20,10 @@ const theme = {
     },
     media: media as Media,
     palette: {
+        black: {
+            primary: "#000000",
+            secondary: "#090909",
+        },
         common: {
             black: "#000000",
             white: "#ffffff"
