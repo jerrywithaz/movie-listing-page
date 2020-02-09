@@ -1,6 +1,5 @@
 import { MarketData, Session, Film } from './../types';
 import { 
-    makeSelectState, 
     selectState, 
     makeSelectCinemas,
     makeSelectFilms,
@@ -22,24 +21,6 @@ describe("core/selectors", () => {
             };
         
             expect(selectState(mockedState)).toEqual(mockedState);
-
-        });
-
-    });
-
-    describe("makeSelectState", () => {
-
-        it("should return the state", () => {
-
-            const mockedState = {
-                data: {
-                    market: {} as MarketData,
-                    selectedCinema: null
-                },
-                error: null
-            };
-        
-            expect(makeSelectState()(mockedState)).toEqual(mockedState);
 
         });
 

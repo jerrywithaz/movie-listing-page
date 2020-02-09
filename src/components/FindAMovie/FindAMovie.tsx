@@ -10,7 +10,7 @@ const FindAMovie = (props: FindAMovieProps) => {
     const { theaters, selectedTheater, setSelectedTheater, films, ...rest } = props;
 
     return (
-        <Styled.FindAMovie {...rest} width="752px" height="722px" role="main">
+        <Styled.FindAMovie {...rest} width="752px" height="722px" role="main" aria-live="polite">
             <Styled.Container>
                 <Styled.Heading1>Find a Movie</Styled.Heading1>
                 <SelectTheaterList 

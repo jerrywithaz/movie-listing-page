@@ -21,11 +21,13 @@ const Film = ({ slug }: FilmProps) => {
             target="_blank"
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
+            onFocus={() => setHovered(true)}
+            onBlur={() => setHovered(false)}
             title={title}>
                 <Styled.Title>
                     {title}
                 </Styled.Title>
-                <img src={cartSrc} alt={cartAlt}/>
+                <Styled.Icon src={cartSrc} alt={cartAlt}/>
         </Styled.Film>
     );
 

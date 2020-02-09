@@ -4,13 +4,6 @@ import mapSessionsToFilms from 'utils/mapSessionsToFilms';
 
 const selectState = (state: AppState) => state;
 
-const makeSelectState = () => {
-    return createSelector(
-        selectState,
-        appState => appState
-    );
-}
-
 /**
  * Returns the market data from the state
  */
@@ -56,7 +49,6 @@ const makeSelectFilms = () => {
 
 export {
     selectState,
-    makeSelectState,
     makeSelectCinemas,
     makeSelectFilms,
     makeSelectSelectedCinema

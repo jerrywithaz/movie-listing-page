@@ -13,8 +13,8 @@ const SelectTheaterList = ({
 }: SelectTheaterListProps) => {
 
     return (
-        <Styled.SelectTheaterList {...rest}>
-            <Styled.Heading2>Select Theater</Styled.Heading2>
+        <Styled.SelectTheaterList {...rest} aria-labelledby="heading-select-theater">
+            <Styled.Heading2 id="heading-select-theater">Select Theater</Styled.Heading2>
             <Styled.Theaters>
                 {sortBy(theaters, "name").map((theater: Cinema) => {
                     return (

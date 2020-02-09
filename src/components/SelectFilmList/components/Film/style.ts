@@ -33,3 +33,9 @@ export const Title = styled.span`
     overflow: hidden;
     text-overflow: ellipsis;
 `;
+
+export const Icon = styled.img`
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+`;
