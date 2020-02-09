@@ -1,5 +1,11 @@
-import { MarketData } from './../types';
-import { makeSelectState, selectState, makeSelectCinemas } from './../selectors';
+import { MarketData, Session, Film } from './../types';
+import { 
+    makeSelectState, 
+    selectState, 
+    makeSelectCinemas,
+    makeSelectFilms,
+    makeSelectSelectedCinema,
+} from './../selectors';
 
 describe("core/selectors", () => {
 
@@ -63,6 +69,71 @@ describe("core/selectors", () => {
             };
         
             expect(makeSelectCinemas()(mockedState)).toEqual(cinemas);
+
+        });
+
+    });
+
+    describe("makeSelectFilms", () => {
+
+        it("should return the films", () => {
+
+            const sessions = [{
+                "cinemaId": "0003",
+                "sessionId": "35751",
+                "filmHeadOfficeCode": "A000023456",
+                "filmSlug": "birds-of-prey",
+                "filmName": "BIRDS OF PREY",
+            }];
+            const films = [{
+                "slug": "birds-of-prey"
+            }];
+            const selectedCinema = {
+                "id": "0003",
+                "slug": "village",
+                "name": "Village",
+                "status": "OPEN"
+            };
+            const market = {
+                sessions: sessions as Session[],
+                films: films as Film[]
+            } as MarketData;
+
+            const mockedState = {
+                data: {
+                    market,
+                    selectedCinema
+                },
+                error: null
+            };
+        
+            expect(makeSelectFilms()(mockedState)).toEqual(films);
+
+        });
+
+    });
+
+    describe("makeSelectSelectedCinema", () => {
+
+        it("should return the selectedCinema", () => {
+
+            const selectedCinema = {
+                "id": "0003",
+                "slug": "village",
+                "name": "Village",
+                "status": "OPEN"
+            };
+            const market = {} as MarketData;
+            
+            const mockedState = {
+                data: {
+                    market,
+                    selectedCinema
+                },
+                error: null
+            };
+        
+            expect(makeSelectSelectedCinema()(mockedState)).toEqual(selectedCinema);
 
         });
 

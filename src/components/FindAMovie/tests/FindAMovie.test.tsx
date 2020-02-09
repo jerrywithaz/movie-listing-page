@@ -8,6 +8,7 @@ describe("components/FindAMovie", () => {
 
         const tree = renderWithTheme(
             <FindAMovie 
+                films={[]}
                 theaters={[]} 
                 selectedTheater={null}
                 setSelectedTheater={() => {}}/>
