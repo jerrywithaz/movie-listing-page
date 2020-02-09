@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Hero = styled.div`
+export const Hero = styled.header`
     background: linear-gradient(
         159.41deg, 
         ${props => props.theme.palette.secondary} 3.42%, 

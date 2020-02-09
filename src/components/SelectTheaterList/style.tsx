@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Heading2 as DefaultHeading2 } from 'components/Heading';
 import { TheaterProps } from './types';
 
-export const SelectTheaterList = styled.div`
+export const SelectTheaterList = styled.section`
     display: flex;
     flex-direction: column;
     max-height: 196px;
@@ -27,7 +27,8 @@ export const Theaters = styled.div`
 `;
 
 export const Theater = styled(({
-    selected, ...rest
+    selected, 
+    ...rest
 }: TheaterProps) => 
     <button {...rest}/>
 )`
@@ -46,7 +47,6 @@ export const Theater = styled(({
         font-size: 16px;
         font-weight: bold;
         text-transform: uppercase;
-        text-align: center;
         white-space: nowrap;
         width: 176px;
         &:hover, &:focus {

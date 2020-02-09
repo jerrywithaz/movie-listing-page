@@ -73,7 +73,7 @@ exports[`components/Hero should match snapshot 1`] = `
   }
 }
 
-<div
+<header
   className="c0"
 >
   <div
@@ -90,8 +90,8 @@ exports[`components/Hero should match snapshot 1`] = `
     <img
       alt="Alamo Drafthouse Cinema"
       className="c4"
-      src="hero-logo.svg"
+      src="hero-logo.png"
     />
   </div>
-</div>
+</header>
 `;

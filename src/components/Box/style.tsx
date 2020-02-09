@@ -7,7 +7,7 @@ export const Box = styled(({
     height, 
     ...rest
 }: BoxProps) => 
-    <div {...rest}/>
+    <main {...rest}/>
 )`
     height: ${props => props.height};
     width: ${props => props.width};

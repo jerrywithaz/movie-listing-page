@@ -8,7 +8,6 @@ describe("utils/mapSessionsToFilms", () => {
         const sessions = [{
             "cinemaId": "0003",
             "sessionId": "35751",
-            "filmHeadOfficeCode": "A000023456",
             "filmSlug": "birds-of-prey",
             "filmName": "BIRDS OF PREY",
         }];

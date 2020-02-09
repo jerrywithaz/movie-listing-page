@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Heading2 as DefaultHeading2 } from 'components/Heading';
 
-export const SelectFilmList = styled.div`
+export const SelectFilmList = styled.section`
     display: flex;
     flex-direction: column;
     overflow: hidden;

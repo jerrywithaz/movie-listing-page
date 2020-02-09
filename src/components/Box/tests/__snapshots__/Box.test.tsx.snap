@@ -10,7 +10,7 @@ exports[`components/Box should match snapshot 1`] = `
   background: #ffffff;
 }
 
-<div
+<main
   className="c0"
 />
 `;

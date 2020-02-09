@@ -209,7 +209,7 @@ exports[`containers/MovieListingPage should match snapshot 1`] = `
 <div
   className="c0"
 >
-  <div
+  <header
     className="c1 c2"
   >
     <div
@@ -226,12 +226,13 @@ exports[`containers/MovieListingPage should match snapshot 1`] = `
       <img
         alt="Alamo Drafthouse Cinema"
         className="c6"
-        src="hero-logo.svg"
+        src="hero-logo.png"
       />
     </div>
-  </div>
-  <div
+  </header>
+  <main
     className="c7 c8 c9"
+    role="main"
   >
     <div
       className="c10"
@@ -241,7 +242,7 @@ exports[`containers/MovieListingPage should match snapshot 1`] = `
       >
         Find a Movie
       </h1>
-      <div
+      <section
         className="c13"
       >
         <h2
@@ -252,8 +253,8 @@ exports[`containers/MovieListingPage should match snapshot 1`] = `
         <div
           className="c16"
         />
-      </div>
+      </section>
     </div>
-  </div>
+  </main>
 </div>
 `;

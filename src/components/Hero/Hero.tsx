@@ -1,6 +1,6 @@
 import React from 'react';
 import arrow from 'assets/images/hero-arrow.svg';
-import logo from 'assets/images/hero-logo.svg';
+import logo from 'assets/images/hero-logo.png';
 import { HeroProps } from './types';
 
 import * as Styled from './style';

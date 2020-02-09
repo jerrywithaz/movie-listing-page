@@ -1,21 +1,13 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import SelectFilmList from './';
+import { getMockTheater, getMockFilms } from 'core/mocks';
 
 const story = storiesOf('SelectFilmList', module);
 
-const selectedTheater = {
-    "id": "0003",
-    "slug": "village",
-    "name": "Village",
-    "status": "OPEN"
-};
+const selectedTheater = getMockTheater();
 
-const films = [
-    {"slug": "birds-of-prey"},
-    {"slug": "event-1917"},
-    {"slug": "the-gentlemen"}
-];
+const films = getMockFilms();
 
 story.add('Default', () => (
     <SelectFilmList 
